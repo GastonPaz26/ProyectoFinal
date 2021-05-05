@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TPFinal</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--NAV-->
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-dark" id="header-nav">
+        <div class="container">
+          <div>
+            <a href="#">
+              <img src="./img/5848242ecef1014c0b5e49c8.png" alt="Sony logo" />
+            </a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav ml-auto ml-auto">
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link active dropdown-toggle"
+                  id="categorias-drop"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Categorias</a
+                >
+                <div
+                  class="dropdown-menu mb-2"
+                  aria-labelledby="categorias-drop"
+                >
+                  <a href="#" class="dropdown-item">Aires y Calefaccion</a>
+                  <a href="#" class="dropdown-item">Audio</a>
+                  <a href="#" class="dropdown-item">Celulares y Telefonos</a>
+                  <a href="#" class="dropdown-item">Consolas y Videojuegos</a>
+                  <a href="#" class="dropdown-item">Electrodomesticos</a>
+                  <a href="#" class="dropdown-item">Electronica</a>
+                  <a href="#" class="dropdown-item">Gaming</a>
+                  <a href="#" class="dropdown-item">Informatica</a>
+                  <a href="#" class="dropdown-item">Seguridad</a>
+                  <a href="#" class="dropdown-item">TV Led y Video</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="/Gaston-2/Parte 2/Page404/page404.html"
+                  class="nav-link"
+                  >Soporte</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link active">Login</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link badge badge-pill badge-warning text-dark p-2 mt-md-2 mr-2 mb-2"
+                  data-toggle="modal"
+                  data-target="#sub-button"
+                  >Suscribite</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex justify-content-center mt-md-3">
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Busca tu producto"
+                aria-label="search"
+              />
+              <button type="submit" class="btn btn-outline-warning ml-2 mb-3">
+                Buscar
+              </button>
+            </form>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="sub-button"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Recibe las Mejores novedades
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="input-name" class="form-label"
+                          >Nombre</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="input-name"
+                          required
+                          aria-describedby="name-user"
+                          placeholder="Ingrese su nombre"
+                          minlength="3"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="input-mail">Correo Electronico</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="input-mail"
+                          required
+                          aria-describedby="emailHelp"
+                          placeholder="Ingrese su correo electronico"
+                        />
+                      </div>
+                      <div class="form-group row">
+                        <label for="date-input" class="col">Date</label>
+                        <div class="col-12">
+                          <input
+                            class="form-control"
+                            type="date"
+                            value="today"
+                            id="date-input"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group form-check">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="Term"
+                          required
+                        />
+                        <a class="form-check-label" for="exampleCheck1"
+                          >Aceptar terminos y condiciones</a
+                        >
+                      </div>
+                      <div class="form-group form-check">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="newsletter"
+                          required
+                        />
+                        <label class="form-check-label" for="exampleCheck1"
+                          >Aceptar recibir novedades por mail</label
+                        >
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="submit" class="btn btn-secondary mr-auto">
+                      Volver
+                    </button>
+                    <button
+                      type="submit"
+                      class="btn btn-primary px-5"
+                      data-dismiss="modal"
+                    >
+                      Enviar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!--CAROUSEL-->
+      <div
+        id="carousel-main"
+        class="carousel slide OVERLAY"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carousel-main"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carousel-main" data-slide-to="1"></li>
+          <li data-target="#carousel-main" data-slide-to="2"></li>
+        </ol> 
+        <div class="carousel-inner  ">
+          <div class="carousel-item active ">
+            <img
+              src="./img/drone-img.jpg"
+              class="d-block vw-100 vh-100 img-fluid "
+              alt="Drone-img"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Alta Gama</h5>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <img
+              src="./img/sony-a7.jpg"
+              class="d-block vw-100 vh-100 img-fluid "
+              alt="sony-a7"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>La Mejor Calidad</h5>
+  
+            </div>
+          </div>
+          <div class="carousel-item  ">
+            <img
+              src="./img/gpu-3080.jpg"
+              class="d-block vw-100 vh-100 img-fluid"
+              alt="gtx-3080"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Maxima Potencia</h5>
+  
+            </div>
+          </div>
+            <div class="overlay">
+              <div class="container">
+                <div class="row align-items-center ">
+                  <div class="col-md-6 offset-md-6 ">
+                    <h1>Conoce nuestras mejores ofertas</h1>
+                    <p class="d-none d-md-block "> Tenemos la mejor tecnologia para todos tus proyectos</p>
+                    <button class="btn btn-success">Ofertas del Mes</button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+          <a
+            class="carousel-control-prev "
+            href="#carousel-main"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+            <span class="sr-only d-flex align-items-center">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carousel-main"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only d-flex align-items-center">Next</span>
+          </a>
+          
+      </div>
+    <!--NAV END-->
+    <section class="">
+      <div class="container">
+        <div class="row py-5">
+          <i></i><h3 class="mb-5 ">¡Los Productos Mas Buscados!</h3>
+          <div class="card-group">
+            <div class="card mx-5 ">
+              <img src="./img/compu1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title ">Notebook Gamer Asus Tuf Ryzen 5 8gb Gtx1650 1tb Gaming
+                </h5>
+              <p class="card-text">$239.999</p>
+              <p class="card-text text-success">En 9x $26.666,56 sin interés
+                <a href="#">Ver los medios de pago</a></p>
+              </div>
+            </div>
+            <div class="card mx-5 border">
+              <img src="./img/celu1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title ">Huawei P30 Pro 512 Gb
+                </h5>
+                <p class="card-text">$298.999</p>
+                <p class="card-text text-success">En 12x $39.988,62
+                  <a href="#">Ver los medios de pago</a></p>
+              </div>
+            </div>
+            <div class="card mx-5 border">
+              <img src="./img/pods1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title ">Apple AirPods with wireless charging case (2nd generation) blanco
+                </h5>
+                <span class="badge badge-warning mb-1">Mas vendido</span>
+              <p class="card-text">$29.999</p>
+              <p class="card-text text-success">En 12x $3.477,15
+                <a href="#">Ver los medios de pago</a></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="row py-5">
+          <i></i><h3 class="mb-5 ">¡Los Productos Mas Buscados!</h3>
+          <div class="card-group">
+            <div class="card mx-5 ">
+              <img src="./img/compu1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title ">Notebook Gamer Asus Tuf Ryzen 5 8gb Gtx1650 1tb Gaming
+                </h5>
+              <p class="card-text">$239.999</p>
+              <p class="card-text text-success">En 9x $26.666,56 sin interés
+                <a href="#">Ver los medios de pago</a></p>
+              </div>
+            </div>
+            <div class="card mx-5 border">
+              <img src="./img/ps5.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title ">Notebook Gamer Asus Tuf Ryzen 5 8gb Gtx1650 1tb Gaming
+                </h5>
+              <p class="card-text">$239.999</p>
+              <p class="card-text text-success">En 9x $26.666,56 sin interés
+                <a href="#">Ver los medios de pago</a></p>
+              </div>
+            </div>
+            <div class="card mx-5 border">
+              <img src="./img/pods1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title ">Notebook Gamer Asus Tuf Ryzen 5 8gb Gtx1650 1tb Gaming
+                </h5>
+              <p class="card-text">$239.999</p>
+              <p class="card-text text-success">En 9x $26.666,56 sin interés
+                <a href="#">Ver los medios de pago</a></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!--FOOTER-->
+    <footer class="p-3">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col" id="footer-img">
+            <a href="#">
+              <img src="./img/5848242ecef1014c0b5e49c8.png" alt="Logo sony" />
+            </a>
+          </div>
+          <div class="col-12 col-sm">
+            <a class="" href="#">Preguntas Frecuentes</a>
+          </div>
+          <div class="col-12 col-sm">
+            <a href="#">Quienes somos?</a>
+          </div>
+          <div class="col-12 col-sm">
+            <a href="/Gaston-2/Parte 2/Contact_us/contac_us.html">Contacto</a>
+          </div>
+          <div class="col-12 col-sm">
+            <p href="#">Redes Sociales</p>
+            <a href="#">
+              <img
+                class="icon-footer"
+                src="/img/1491580635-yumminkysocialmedia26_83102.png"
+              />
+            </a>
+            <a href="#">
+              <img
+                class="icon-footer"
+                src="./img/1491579542-yumminkysocialmedia22_83078.png"
+              />
+            </a>
+            <a href="#">
+              <img class="icon-footer" src="./img/facebook.png" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

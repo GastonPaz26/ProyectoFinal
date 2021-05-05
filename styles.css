@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --negro: #000000;
+  --azul-oxford: #14213d;
+  --naranja-web: #fca311;
+  --platino: #e5e5e5;
+  --blanco: #ffffff;
+}
+
+header {
+  background-color: var(--azul-oxford);
+}
+
+#header-nav img {
+  width: 100px;
+}
+
+.modal-header {
+  background-color: #084887;
+}
+.modal-header img {
+  width: 100px;
+  height: 100px;
+}
+.modal-body {
+  background: var(--platino);
+}
+
+.modal-footer {
+  background-color: var(--platino);
+}
+#carousel-main .carousel-item img {
+  object-fit: cover;
+}
+
+#carousel-main {
+  position: relative;
+}
+
+#carousel-main .overlay {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+#carousel-main .overlay .container,
+#carousel-main .overlay .row {
+  height: 100%;
+}
+p .card-text .text-success {
+  font-size: small;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  color: white;
+  background-color: var(--azul-oxford);
+}
+
+/*Footer*/
+
+.container .row .col-12 a {
+  color: #fff;
+}
+#footer-img img {
+  width: 75px;
+}
+
+.icon-footer {
+  width: 40px;
+}
+
+.modal-header {
+  background-color: #084887;
+}
+.modal-header img {
+  width: 100px;
+  height: 100px;
+}
+.modal-body-sub {
+  background: var(--platino);
+}
+
+.modal-footer {
+  background-color: var(--platino);
+}
